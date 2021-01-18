@@ -6,7 +6,7 @@
 
 ## Minha aplicação
 
-![my app](./images/desafio_full.png)
+![my app](./images/meu_app.png)
 
 ## Passos para rodar o app
 
