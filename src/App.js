@@ -1,24 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  function myAlert(text){
+    alert(' você clicou no ' + text)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="grid">
+        <header className="App-header flex">
+          <h1 className="App-title">Uma nova ferramenta</h1>
+          <p className="App-text">Inclua suas movimentações de investimentos e 
+            acompanhe seus rendimentos na hora que quiser </p>
+        </header>
+
+       <section className="App-section-cards flex">
+
+         <div className="App-card flex">
+           <div className="card-image"></div>
+           <a className="card-link" href="#">Acesse!</a>
+         </div>
+
+         <div className="App-card flex">
+           <div className="card-image"></div>
+           <a className="card-link" href="#">Cadastre-se</a>
+         </div>
+
+         <div className="App-card flex">
+           <div className="card-image"></div>
+           <a className="card-link" href="#">Começe a usar</a>
+          </div>
+       </section>
+
+        <div className="App-button-group flex">
+          <button onClick={() => myAlert('botão 1')} >Botão de acão 1</button>
+          <button onClick={() => myAlert('botão 2')} >Botão de acão 2</button>
+        </div>
+    </main>
   );
 }
 
